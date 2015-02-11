@@ -1,0 +1,857 @@
+/* WoBe landing page CSS */
+
+body {font-family: 'Roboto', sans-serif;}
+
+.jumbotron.slide-wraper {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.jumbotron.map-wrapper {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.jumbotron.features {
+    background: #37353b;
+    color: #ffffff;
+}
+.features i {
+    color: #e91e63;
+    transition: color 0.5s ease;
+    border-radius: 70px;
+}
+.features i:hover {
+    color: #ffd800;
+}
+.jumbotron p {
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-weight: 300;
+}
+.map {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+    margin-bottom: 0px;
+}
+#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+.job-list i.fa {
+    font-size: 45px;
+    color: #e91e63;
+}
+.navbar-brand {
+    height: auto;
+}
+footer {
+    color: #fff;
+    background: #37353b;
+}
+.head-title {
+    margin: 85px 0px;
+}
+.head-title h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+.nav>li>a {
+    padding: 17px 15px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+    color:#e91e63;
+}
+footer p.copy {
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px;
+    background: #2b2a2e;
+    color: #979798;
+}
+.form-wrapper {
+    padding: 50px 0px;
+}
+footer input[type="text"], footer input[type="email"], footer textarea.form-control {
+    border: none;
+    font-weight: 300;
+    background: #2b2a2e;
+    border-radius: 2px;
+}
+footer input[type="text"]:focus, footer input[type="email"]:focus, footer textarea.form-control:focus {
+    border: none;
+    background: #fff;
+    box-shadow: none;
+}
+.btn-lg, .btn-group-lg>.btn {
+    border-radius: 2px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #08b2a0;
+    border-color: #04a08f;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #04a08f;
+    border-color: #04a08f;
+}
+.job-list p  {
+    color: #777;
+    font-weight: 300;
+}
+footer p {
+    font-weight: 300;
+}
+footer a {
+    color: #e91e63;
+    font-weight: 300;
+}
+.carousel-caption {
+    right: 14%;
+    left: 14%;
+}
+footer a:hover {
+    color: #fff;
+}
+ul.socnet li a i.fa {
+    font-size: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.img-wrapper {
+    position: relative;
+    z-index: 2000;
+    top: -80px !important;
+}
+.carousel-caption form input {
+    border: none;
+    opacity: 0.8;
+    border-radius: 3px;
+}
+.carousel-caption form input:focus {
+    opacity: 1;
+}
+ul.socnet li {
+    margin-bottom: 5px;
+}
+ul.socnet li a {
+    font-style: italic;
+}
+footer small {
+    font-weight: 300;
+}
+.slide-wraper {
+    position: relative;
+    overflow: hidden !important;
+    -webkit-transform: translate3d(0, 0, 0, 0);
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
+.navbar-brand img {
+    width: 100px;
+    margin: 0px;
+}
+#gradient {
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-top: -50px !important;
+    width: 100%;
+    height: 100%;
+}
+.features  h5 {
+    font-weight: 300;
+}
+.carousel-caption {
+    top: 20%;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("../img/loader.gif") 50% 50% no-repeat rgb(249,249,249);
+}
+
+/* mobile CSS */
+@media (min-width: 320px) {
+    .job-list {
+        text-align: center;
+    }
+    .job-list a {
+        margin-top: 20px;
+    }
+    .slide-wraper {
+        height: 425px;
+    }
+    .img-slide-wrapper {
+        display: none;
+    }
+    .imageslider2 {
+        display: block;
+        height: auto;
+        left: 30px;
+        position: absolute;
+        top: -29px;
+        width: 249px;
+        z-index: 4000;
+    }
+    .imageslider2 {
+        display: block;
+        height: auto;
+        left: 26px;
+        position: absolute;
+        top: -41px;
+        width: 190px;
+        z-index: 4000;
+    }
+    .validate .form-control {
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .bg-dark {
+        display: block;
+        padding: 25px 20px;
+        background: #2d2b30;
+        color: #fff;
+    }
+    .navbar {
+        background: transparent;
+        padding: 10px 0px;
+    }
+    .carousel-caption {
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .navbar-toggle {
+        background: rgba(0,0,0,0.4)
+    }
+    .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-collapse {
+        background: rgba(0,0,0,0.4)
+    }
+    .nav-pills li a {
+        color: #fff;
+        font-weight: 300;
+    }
+    .carousel-inner {
+        position: relative;
+        overflow: visible;
+    }
+    .bg-dark {
+        background: none repeat scroll 0 0 #2d2b30;
+        color: #fff;
+        display: block;
+        padding: 25px 20px;
+        position: relative;
+        z-index: 2000;
+    }
+    .carousel {
+        height: 280px;
+        position: relative;
+    } 
+    .show-bg {
+        background: url(../img/bgslider3.png) no-repeat top center;
+    }
+    #slides-container .slide img {
+        width: 100%;
+        margin: 0px;
+    }
+    #slides-container {
+        width: 100%;
+    }
+    .jumbotron.bg-wmn {
+        background: url("../img/bgslider3.png") no-repeat top center;
+        background-size: cover;
+        min-height: auto;
+    }
+    .jumbotron {
+        background-color: #eee;
+        color: inherit;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+    #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 300px; 
+        height: 240px; 
+        padding: 10px; 
+    }
+}
+/* Tablet CSS */
+@media (min-width: 420px) {
+    .container {
+        width: inherit;
+    }
+    .job-list {
+        text-align: left;
+    }
+    .job-list a {
+        margin-top: 50px;
+    }
+    .slide-wraper {
+        height: auto;
+    }
+    .img-slide-wrapper {
+        display: block;
+    }
+    .imageslider2 {
+        display: block;
+        height: auto;
+        left: 30px;
+        position: absolute;
+        top: -29px;
+        width: 249px;
+        z-index: 4000;
+    }
+    .text-head h2 {
+        font-size: 18px;
+    }
+    .text-head h4 {
+        font-size: 12px;
+    }
+    .text-head small {
+        display: none;
+    }
+    .page .form-control {
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .navbar {
+        background: rgba(0,0,0,0.1);
+        padding: 10px 0px;
+    }
+    .bg-dark {
+        display: none;
+        padding: 25px 20px;
+        background: #2d2b30;
+        color: #fff;
+    }
+    .carousel-caption {
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .nav-pills li a {
+        color: #e91e63;
+        font-weight: 300;
+    }
+    .navbar-collapse {
+        background: transparent
+    }
+    .carousel-inner {
+        position: relative;
+        overflow: visible;
+    }
+    .bg-dark {
+        background: none repeat scroll 0 0 #2d2b30;
+        color: #fff;
+        display: block;
+        margin-top: 0px;
+        padding: 25px 20px;
+        position: relative;
+        z-index: 1000;
+    }
+    .carousel {
+        height: 385px;
+        position: relative;
+    } 
+    .show-bg {
+        background: url(../img/bgslider3.png) no-repeat top center;
+    }
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: 14%;
+    }
+    .jumbotron.bg-wmn {
+        background: url("../img/bgslider3.png") no-repeat top center;
+        background-size: cover;
+        min-height: auto;
+    }
+     .jumbotron {
+        background-color: #eee;
+        color: inherit;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+    #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 300px; 
+        height: 240px; 
+        padding: 10px; 
+    }
+}
+/* Tablet CSS */
+@media (min-width: 970px) {
+    .container {
+        width: inherit;
+    }
+    .job-list {
+        text-align: left;
+    }
+    .job-list a {
+        margin-top: 50px;
+    }
+    .slide-wraper {
+        height: auto;
+    }
+    .img-slide-wrapper {
+        display: block;
+    }
+    .imageslider2 {
+        display: block;
+        height: auto;
+        left: 30px;
+        position: absolute;
+        top: -29px;
+        width: 249px;
+        z-index: 4000;
+    }
+    .text-head h2 {
+        font-size: 20px;
+    }
+    .text-head h4 {
+        font-size: 12px;
+    }
+    .text-head small {
+        display: block;
+        font-size: 13px;
+    }
+    .page .form-control {
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .navbar {
+        background: rgba(0,0,0,0.1);
+        padding: 10px 0px;
+    }
+    .bg-dark {
+        display: none;
+        padding: 25px 20px;
+        background: #2d2b30;
+        color: #fff;
+    }
+    .carousel-caption {
+        left: 3%;
+        top: 20%;
+        width: 100%;
+    }
+    .nav-pills li a {
+        color: #e91e63;
+        font-weight: 300;
+    }
+    .navbar-collapse {
+        background: transparent
+    }
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+    }
+    .carousel {
+        height: auto;
+        position: relative;
+    } 
+    .show-bg {
+        background: transparent;
+    }
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        width: 100%;
+        margin: 0px;
+    }
+    .jumbotron.bg-wmn {
+        background: url("../img/bgslider3.png") no-repeat top center;
+        background-size: cover;
+        min-height: 350px;
+    }
+     .jumbotron {
+        background-color: #eee;
+        color: inherit;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+    #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 300px; 
+        height: 240px; 
+        padding: 10px; 
+    }
+}
+/* Desktop CSS */
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+    .job-list {
+        text-align: left;
+    }
+    .job-list a {
+        margin-top: 50px;
+    }
+    .slide-wraper {
+        height: auto;
+    }
+    .img-slide-wrapper {
+        display: block;
+    }
+    .imageslider2 {
+        display: block;
+        height: auto;
+        left: 34px;
+        position: absolute;
+        top: -15px;
+        width: 316px;
+        z-index: 4000;
+    }
+    .page .form-control {
+        font-size: 12px;
+        font-weight: 300;
+        margin-right: 3px;
+    }
+    .text-head h2 {
+        font-size: 30px;
+    }
+    .text-head h4 {
+        font-size: 18px;
+    }
+    .text-head small {
+        display: block;
+        font-size: 15px;
+    }
+    .navbar {
+        background: rgba(0,0,0,0.1);
+        padding: 10px 0px;
+    }
+    .bg-dark {
+        display: none;
+        padding: 25px 20px;
+        background: #2d2b30;
+        color: #fff;
+    }
+    .carousel-caption {
+        left: 14%;
+        top: 20%;
+        width: inherit;
+    }
+    .nav-pills li a {
+        color: #fff;
+        font-weight: 300;
+        text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+    }
+    .navbar-collapse {
+        background: transparent
+    }
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+    }
+    .carousel {
+        height: auto;
+        position: relative;
+    } 
+    .show-bg {
+        background: transparent;
+    }
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        width: 100%;
+        margin: 0px;
+    }
+    .jumbotron.bg-wmn {
+        background: url("../img/bgslider3.png") no-repeat top center;
+        background-size: cover;
+        min-height: 450px;
+    }
+    .jumbotron {
+        background-color: #eee;
+        color: inherit;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+    #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 360px; 
+        height: 240px; 
+        padding: 10px; 
+    }
+}
+.carousel-caption form input[type="submit"] {
+    padding: 9px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.bg-txt {
+    background: rgba(0,0,0,0.5);
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-top: 7%;
+}
+.bg-txt h2 {
+    margin-top: 0px;
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #fff;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	color: #fff;
+	font-size: 18px;
+    font-weight: 300;
+	padding: 10px;
+	margin: 0;
+	font-weight: 300;
+	background: #a31545;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #e91e63;
+	font-size: 1.1em;
+	font-weight: 300;
+    background: #fff;
+}
+
+.cbp-spmenu a:hover {
+	background: #e91e63;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cbp-spmenu a:active {
+	background: #e91e63;
+	color: #fff;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #eee;
+	padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
+
+.contact-form {
+    width: 100%;
+}
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea.form-control{
+    width: 100%;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    position: fixed;
+    right: 0;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 2001;
+}
+form .form-group input[type="submit"] {
+    height: 50px;
+}
+.well {
+    background: rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    min-height: 20px;
+    color: #fff;
+    margin: 25% 0 0 0;
+    padding: 19px;
+}
+.well h2 {
+    margin-top: 0px;
+}
+form.form-inline {
+    margin-top: 10px;
+}
+form.form-inline input.form-control {
+    padding: 6px 6px;
+    border: none;
+    opacity: 0.9;
+}
+#sliders {
+    height: 450px;
+    overflow: hidden;
+}
+#sliders img {
+    width: 100%;
+}
+.well {
+    padding: 15px;
+}
+
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+.form-group #saveForm {
+    width: auto;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: bold;
+} 
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: transparent;
+    border: none;
+}
+.dropdown-menu.op {
+    opacity: 0.8;
+    min-width: 125px;
+}
+.dropdown-menu.op li a {
+    color: #000;
+    font-size: 12px;
+    text-shadow: none;
+}
+
